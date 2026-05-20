@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand">Tech-Titans</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <div class="row">
+
+    <div class="col-md-3 bg-secondary text-white p-3">
+      <h5>Reach Us</h5>
+      <p>We reply fast</p>
+    </div>
+
+    <div class="col-md-6 bg-white p-3">
+      <h2>Contact Us</h2>
+
+      <form onsubmit="showAlert(event)">
+        <input type="email" class="form-control mb-2" placeholder="Enter Email" required>
+        <textarea class="form-control mb-2" placeholder="Message" required></textarea>
+        <button class="btn btn-primary">Send</button>
+      </form>
+
+      <!-- ALERT -->
+      <div id="alertBox" class="alert alert-success mt-3 d-none alert-dismissible fade show">
+        Message sent successfully!
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      </div>
+
+    </div>
+
+    <div class="col-md-3 bg-secondary text-white p-3">
+      <h5>Support</h5>
+      <p>Email us anytime</p>
+    </div>
+
+  </div>
+</div>
+
+<footer class="bg-dark text-white text-center p-3 mt-4">
+  <p>Project: Tech-Titans Blog-Site</p>
+  <p>Authors: Team Tech-Titans</p>
+  <p>Email: tech-titans@tech-titans.com</p>
+</footer>
+
+<script>
+function showAlert(e){
+  e.preventDefault();
+  document.getElementById("alertBox").classList.remove("d-none");
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
